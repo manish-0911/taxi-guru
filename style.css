@@ -1,0 +1,295 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+.nav {
+  border: 2px solid black;
+}
+
+.top {
+  padding: 1.5vw;
+  border-bottom: dotted #111111;
+  background-color: black;
+}
+
+.middle {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2vw 2vw;
+}
+
+.middle-left {
+  padding-right: 4vw;
+}
+
+.middle-right {
+  display: flex;
+  gap: 2vw;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 100;
+  align-items: center;
+}
+
+.middle-right i {
+  padding-left: 4vw;
+  font-size: 2vw;
+}
+
+.middle-right button {
+  background-color: #D9C77E;
+  color: white;
+  font-family: "PT Sans", sans-serif;
+  font-size: 1vw;
+  padding: 0.8vw 2vw;
+  border-radius: 0.3vw;
+}
+
+.bottom {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  font-family: "PT Sans", sans-serif;
+  color: white;
+  gap: 2vw;
+  padding: 1vw;
+}
+
+.slideshow {
+  background-image: url("back.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.slideshow-dummy {
+  height: 23.3%;
+  background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.slideshow-content {
+  height: 23.3%;
+  font-family: "PT Sans", sans-serif;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.slideshow-content h1 {
+  color: white;
+  font-size: 6vw;
+  animation: fadeInDown 1.5s forwards;
+}
+
+@keyframes fadeInDown {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slideshow-content p {
+  color: white;
+  font-size: 1.5vw;
+  font-style: italic;
+  padding: 2vw;
+  animation: fadeInLeft 1s forwards;
+}
+
+@keyframes fadeInLeft {
+  from {
+    transform: translateX(-380px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slideshow-content button {
+  background-color: #D9C77E;
+  color: white;
+  font-family: "PT Sans", sans-serif;
+  font-size: 1vw;
+  font-weight: 400;
+  padding: 0.6vw 2.2vw;
+  border-radius: 0.3vw;
+}
+
+.main-section {
+  font-family: "PT Sans", sans-serif;
+  padding-bottom: 2vw;
+
+}
+
+.main-section-topbot h1 {
+  padding-bottom: 1.5vw;
+  display: flex;
+  justify-content: center;
+}
+
+.main-section-topbotmid {
+  display: flex;
+  justify-content: center;
+}
+
+.topmid-left,
+.topmid-right {
+  width: 5vw;
+  margin: 0.1vw;
+  background-color: black;
+  border: 1px solid black;
+}
+
+.main-section-topbot p {
+  display: flex;
+  justify-content: center;
+  padding-top: 1.5vw;
+  text-align: center;
+}
+
+.main-middle-content {
+  display: flex;
+  padding-top: 2vw;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+.main-mid-card {
+  padding-left: 2vw;
+  padding-right: 2vw;
+  line-height: 2vw;
+}
+
+.diamond {
+  width: 4vw;
+  height: 4vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  border-radius: 0.3vw;
+  background-color: black;
+  transform: rotate(-45deg);
+}
+
+.diamond-icon {
+  color: #F1E093;
+  transform: rotate(45deg);
+}
+
+
+.main-mid-card:hover {
+  .diamond {
+    background-color: white;
+    border: 1px solid #F1E093;
+    .diamond-icon {
+      color: black;
+    }
+  }
+}
+
+
+.main-mid-card h2,
+p {
+  padding: 0.5vw;
+  text-align: center;
+}
+
+.topbot-image-section {
+  display: flex;
+  justify-content: center;
+  gap: 2vw;
+  height: 30%;
+  position: relative;
+  text-align: center;
+  color: white;
+  padding: 2vw;
+}
+
+
+.topbot-image-section {
+  animation: fadeInLeft1 1s forwards;
+}
+
+.left {
+  position: absolute;
+  top: 50%;
+  left: 20%; 
+}
+
+@keyframes fadeInLeft1 {
+  from {
+    transform: translateX(-380px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.right {
+  position: absolute;
+  top: 50%;
+  right: 22%;
+}
+
+.dynamic-part {
+  background: url("http://thetaxiguru.com/wp-content/uploads/2024/01/1800.png") no-repeat;
+  height: 60%;
+  color: white;
+  font-family: "PT Sans", sans-serif;
+}
+
+.dynamic-part-content h1 {
+  padding-bottom: 1.5vw;
+  display: flex;
+  justify-content: center;
+}
+
+.dynamic-part-mid {
+  display: flex;
+  justify-content: center;
+}
+
+.dynamic-part-left,
+.dynamic-part-right {
+  width: 5vw;
+  margin: 0.5vw;
+  background-color: white;
+  border: 1px solid white;
+}
+
+.dynamic-part-center i {
+  color: #F1E093;
+}
+
+.circle {
+  width: 2vw;
+  height: 2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2vw;
+  background-color: black;
+}
+
+.circle-icon {
+  color: #F1E093;
+}3
